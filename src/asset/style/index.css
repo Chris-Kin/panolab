@@ -1,0 +1,31 @@
+/**
+主题色： #9CD1E5 #81d8d0
+*/
+
+html, body {
+  height: 100%;
+}
+html {
+  font-size: 100px;
+}
+body {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-size: .14rem;
+  color: #555;
+  background-color: #60dbd0;
+  line-height: 1.5;
+}
+::selection {
+  background-color: #81d8d0;
+}
+a, .a {
+  color: #2a8980;
+  outline: none;
+}
+
+.el-form-item > div {
+  width: 200px;
+}
+.ff-song {
+  font-family: 'Hanzipen SC';
+}
