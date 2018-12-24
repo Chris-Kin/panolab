@@ -1,5 +1,3 @@
-import API from './api';
-
 import pano from '@/util/pano';
 
 export default {
@@ -8,7 +6,7 @@ export default {
   mounted() {
     pano('/static/default.jpg', this.$refs.pano);
     window.addEventListener('resize', () => {
-	  pano('/static/default.jpg', this.$refs.pano);
+      pano('/static/default.jpg', this.$refs.pano);
     });
   },
 };

@@ -1,0 +1,20 @@
+<header>
+  <p class='m0'>全景应用, 触手可及</p>
+  <div class="transition-slow" :class="{rotX90: isRotate}">
+    <div class="btn-container mt40 transition">
+      <a class="transition btn-l w100 mr20" href="javascript:;" @click="rotate">登录/注册</a>
+      <a class="transition btn-l w100 ml20 taste" href="/space" target="_blank">体验</a>
+    </div>
+    <div class="btn-container m40 p15 rotX270 login">
+      <label>
+        <span>账号</span>
+        <Input type="text" id="account" v-model="account" />
+      </label>
+      <label>
+        <span>密码</span>
+        <Input type="password" v-model="pwd" />
+      </label>
+      <button class="btn mt20 w60 btn transition taste" @click="login">登录</button>
+    </div>
+  </div>
+</header>

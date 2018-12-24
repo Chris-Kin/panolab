@@ -22,7 +22,8 @@ export default new Router({
     },
     {
       path: '/',
-      redirect: '/u/space',
+      redirect: '/u/login',
+      // redirect: '/u/space',
     },
     ...routes,
   ],

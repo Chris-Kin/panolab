@@ -1,0 +1,79 @@
+header {
+	height: 100%;
+	background: url(/static/banner.jpg) no-repeat;
+	background-size: cover;
+	background-position: 50% 10%;
+	p {
+		padding-top: 170px;
+		font-size: 60px;
+		color: #fefefe;
+		text-align: center;
+		text-shadow: 0 0 7px #234;
+	}
+	@media screen and (max-width: 699px) {
+		p {
+			font-size: 10vw;
+			padding-top: 50%;
+		}
+	}
+	.btn-container {
+		text-align: center;
+		.btn-l {
+			color: #fff;
+			border-color: #fff;
+			&:hover {
+				color: #666;
+			}
+		}
+		.taste:hover {
+			color: #fff;
+			background-color: #6bd76b;
+			border: 1px solid #6bd76b;
+		}
+	}
+}
+
+.rotX90 {
+	/*旋转至90°会导致元素不可点击*/
+	transform: rotateX(89deg);
+	/*该属性保证处于显示器平面之外的元素可见！*/
+	transform-style: preserve-3d;
+	transform-origin: 50% 20%;
+	& > :first-child {
+		opacity: 0;
+	}
+}
+.rotX270 {
+	transform: rotateX(270deg);
+	transform-style: preserve-3d;
+	width: 300px;
+	margin: 40px auto;
+}
+
+.login {
+	text-align: right;
+	color: #fefefe;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,.25);
+	label {
+		display: flex;
+		border-bottom: 1px solid #fff;
+		padding: 10px 10px 5px;
+		span {
+			width: 40px;
+			text-align: right;
+		}
+		input {
+			color: #fff;
+			flex: 1;
+			font-size: 16px;
+			cursor: text;
+			background-color: transparent;
+			border: none;
+			padding: 0 10px 0 10px;
+		}
+	}
+	.btn {
+		color: #fefefe;
+	}
+}
